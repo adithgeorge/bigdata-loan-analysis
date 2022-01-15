@@ -1,0 +1,41 @@
+
+<!-- Configuration required to connect Hadoop to S3 File System on AWS. -->
+
+<!-- Sample core-site.xml  -->
+
+
+<property>
+    <name>fs.s3.impl</name>
+    <value>org.apache.hadoop.fs.s3.S3FileSystem</value>
+</property>
+
+<property>
+    <name>fs.s3n.impl</name>
+    <value>org.apache.hadoop.fs.s3native.NativeS3FileSystem</value>
+</property>
+
+<property>
+    <name>fs.s3n.awsSecretAccessKey</name>
+    <value>###################################</value>
+    <description>key for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3n.awsAccessKeyId</name>
+    <value>####################</value>
+    <description>key id for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3a.awsSecretAccessKey</name>
+    <value>################################</value>
+    <description>key for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3a.awsAccessKeyId</name>
+    <value>####################</value>
+    <description>key id for connecting to s3 file system</description>
+</property>
+
+

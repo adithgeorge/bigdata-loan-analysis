@@ -1,0 +1,58 @@
+
+
+<!-- Connecting hive to aws using aws credentials by specifying credentials in hive-site.xml
+or in hive console. -->
+
+
+<!-- Native File System -->
+
+<!-- set fs.s3n.awsSecretAccessKey=############################### -->
+<!-- set fs.s3n.awsAccessKeyId=################## -->
+
+<!-- s3a File System -->
+
+<!-- set fs.s3a.awsSecretAccessKey=############################### -->
+<!-- set fs.s3a.awsAccessKeyId=################## -->
+
+
+<!-- Command provided in hadoop-env.sh to import all external jars needed -->
+
+<!-- export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$HADOOP_HOME/share/hadoop/tools/lib/* -->
+
+
+
+<property>
+    <name>fs.s3n.awsSecretAccessKey</name>
+    <value>###############################</value>
+    <description>key for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3n.awsAccessKeyId</name>
+    <value>##################</value>
+    <description>key id for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3a.awsSecretAccessKey</name>
+    <value>###############################</value>
+    <description>key for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3a.awsAccessKeyId</name>
+    <value>##################</value>
+    <description>key id for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3.awsSecretAccessKey</name>
+    <value>###############################</value>
+    <description>key for connecting to s3 file system</description>
+</property>
+
+<property>
+    <name>fs.s3.awsAccessKeyId</name>
+    <value>##################</value>
+    <description>key id for connecting to s3 file system</description>
+</property>
